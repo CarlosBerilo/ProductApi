@@ -10,7 +10,7 @@ module.exports = {
         const produts = await Product.paginate({}, {page, limit: 10});
         return res.json(produts);
     },
-    // Inser Product
+    // Insert Product
     async store(req, res){
          const product = await Product.create(req.body);
          return  res.json(product);
