@@ -10,12 +10,17 @@ const cors = require('cors');
 
 // Executa a função express().
 const app = express();
+
 // Permitir receber dados json
 app.use(express.json());
+
 // Gerancimento acesso externo.
 app.use(cors());
+
 // Conectando com o banco de dados
-mongoose.connect('mongodb://127.0.0.1:27017/data_api', { useNewUrlParser: true });
+const uriMongoProductApi = "mongodb+srv://AdminUser:126459@clusterteste-bwcmx.mongodb.net/test?retryWrites=true&w=majority";
+mongoose.connect(uriMongoProductApi, {useNewUrlParser:true});
+
 // Registrar models usando require-dir
 requireDir('./src/models');
 
@@ -24,6 +29,7 @@ app.use('/api', require('./src/routes'));
 
 // Ouvindo a porta 3001 do navegador 
 app.listen(3001);
+
 
 
 
