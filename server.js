@@ -25,7 +25,7 @@ mongoose.connect(uriMongoProductApi, {useNewUrlParser:true});
 requireDir('./src/models');
 
 // Definindo Rota
-app.use('/api', require('./src/routes'));
+app.use('/', require('./src/routes'));
 
 // Ouvindo a porta 3001 do navegador 
 app.listen(3001);
