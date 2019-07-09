@@ -27,7 +27,7 @@ requireDir('./src/models');
 // Definindo Rota
 app.use('/', require('./src/routes'));
 
-// Ouvindo a porta 'process.env.PORT' padrão do heroku ouo a porta 3001 
+// Ouvindo a porta 'process.env.PORT' padrão do heroku ou a porta 3001 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT,()=>{
     console.log("Servidor funcionando.");
