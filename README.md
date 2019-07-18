@@ -3,7 +3,7 @@ Modelo de API restful usando Node.js
 
 ## Descrição
 
-Modelo de api restful utilizando o node.js e banco de dados NoSql MongoDB.
+Modelo de api restful utilizando o node.js e banco de dados MongoDB.
 
 ### Dependências
 * Node 10.11.0
