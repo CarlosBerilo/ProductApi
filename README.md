@@ -5,3 +5,9 @@ Modelo de API restful usando Node.js
 
 Modelo de api restful utilizando o node.js e banco de dados NoSql MongoDB.
 
+### Dependências
+* Node 10.11.0
+* Express 4.17.1
+* mongoose  5.6.2
+* mongoose-paginate 5.0.3
+
